@@ -1,0 +1,117 @@
+@-webkit-keyframes go-back {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes go-back {
+  from {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: hsl(217deg, 28%, 15%);
+  list-style: none;
+}
+
+body {
+  width: 100%;
+}
+body header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 100px;
+}
+body header .image {
+  width: 100%;
+  -webkit-animation: go-back 2s;
+          animation: go-back 2s;
+}
+body header nav {
+  width: 100%;
+  max-width: 305px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body header nav .header-ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  color: hsla(0deg, 0%, 100%, 0.726);
+}
+body header nav .header-ul a {
+  text-decoration: none;
+  color: hsla(0deg, 0%, 100%, 0.726);
+}
+body header nav .header-ul a .header-li {
+  width: 100%;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.4s;
+  font-family: "Raleway", sans-serif;
+}
+body header nav .header-ul a .header-li:hover {
+  color: white;
+}
+body main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+body main .main-first-img {
+  width: 100%;
+  max-width: 750px;
+  margin-bottom: 40px;
+}
+body main h1 {
+  font-size: 41px;
+  width: 100%;
+  max-width: 850px;
+  text-align: center;
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+  margin-bottom: 35px;
+}
+body main .main-first-p {
+  width: 100%;
+  max-width: 600px;
+  color: hsla(0deg, 0%, 100%, 0.726);
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+body main .main-first-btn {
+  width: 100%;
+  max-width: 270px;
+  height: 48px;
+  background-image: linear-gradient(to right, hsl(176deg, 68%, 64%), hsl(198deg, 60%, 50%));
+  border: none;
+  border-radius: 28px;
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: "Raleway", sans-serif;
+  transition: 0.4s;
+  cursor: pointer;
+}
+body main .main-first-btn:hover {
+  transform: scale(1.03);
+}/*# sourceMappingURL=main.css.map */

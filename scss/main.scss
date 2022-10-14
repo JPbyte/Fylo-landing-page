@@ -1,0 +1,133 @@
+$Dark-Blue-intro: hsl(217, 28%, 15%);
+$Dark-Blue-main: hsl(218, 28%, 13%);
+$Dark-Blue-footer: hsl(216, 53%, 9%);
+$Dark-Blue-testimonials: hsl(219, 30%, 18%);
+
+//Accent
+
+$Cyan: hsl(176, 68%, 64%);
+$Blue: hsl(198, 60%, 50%);
+$Light-Red: hsl(0, 100%, 63%);
+
+//Neutral
+
+$White: hsla(0, 0%, 100%, 0.726);
+
+@mixin raleway {
+    font-family: "Raleway", sans-serif;
+}
+@mixin openSans {
+    font-family: "Open Sans", sans-serif;
+}
+
+@mixin centralizar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes go-back {
+    from {
+      transform: translateX(-200px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+}   
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $Dark-Blue-intro;
+    list-style: none;
+}
+
+
+
+body{
+    width: 100%;
+        header{
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            padding: 100px;
+                .image{
+                    width: 100%;
+                    animation: go-back 2s;
+                }
+                nav{
+                    width: 100%;
+                    max-width: 305px;
+                    @include centralizar;
+                    .header-ul{
+                        display: flex;
+                        justify-content: space-between;
+                        width: 100%;
+                        color: $White;
+                            a{  
+                                text-decoration: none;
+                                color: $White;
+                                .header-li{
+                                    width: 100%;
+                                    font-size: 20px;
+                                    text-align: center;
+                                    cursor: pointer;
+                                    transition: 0.4s;
+                                    @include raleway;
+                                    &:hover{
+                                        color: white;
+                                    }
+                                }
+                            }
+                    }
+                }
+        }
+        main{
+            @include centralizar;
+            flex-direction: column;
+            width: 100%;
+                .main-first-img{
+                    width: 100%;
+                    max-width: 750px;
+                    margin-bottom: 40px;
+                }
+                    h1{
+                        font-size: 41px;
+                        width: 100%;
+                        max-width: 850px;
+                        text-align: center;
+                        color: white;
+                        @include raleway;
+                        font-weight: 700;
+                        margin-bottom: 35px;
+                    }
+                        .main-first-p{
+                            width: 100%;
+                            max-width: 600px;
+                            color: $White;
+                            font-size: 23px;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                            .main-first-btn{
+                                width: 100%;
+                                max-width: 270px;
+                                height: 48px;
+                                background-image: linear-gradient(to right, $Cyan, $Blue);
+                                border: none;
+                                border-radius: 28px;
+                                color: white;
+                                font-size: 18px;
+                                font-weight: 700;
+                                @include raleway;
+                                transition: 0.4s;
+                                cursor: pointer;
+                                    &:hover{
+                                      transform:scale(1.03)  
+                                    }
+                            }
+        }
+}
