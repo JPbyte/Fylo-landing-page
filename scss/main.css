@@ -20,18 +20,30 @@
 }
 @-webkit-keyframes pulse {
   0% {
-    filter: brightness(80%);
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  50% {
+    transform: scale(1.03);
+    filter: brightness(150%);
   }
   100% {
-    filter: brightness(200%);
+    transform: scale(1);
+    filter: brightness(100%);
   }
 }
 @keyframes pulse {
   0% {
-    filter: brightness(80%);
+    transform: scale(1);
+    filter: brightness(100%);
+  }
+  50% {
+    transform: scale(1.03);
+    filter: brightness(150%);
   }
   100% {
-    filter: brightness(200%);
+    transform: scale(1);
+    filter: brightness(100%);
   }
 }
 * {
@@ -45,7 +57,7 @@ body {
   width: 100%;
   min-height: 100vh;
   background: url(../images/bg-curvy-desktop.svg) no-repeat;
-  background-position-y: 820px;
+  background-position-y: 790px;
   background-size: contain;
   background-color: hsl(217deg, 28%, 15%);
 }
@@ -173,6 +185,57 @@ body main .item-grid .item .item-text {
 }
 body main .item-grid .item img {
   margin-bottom: 20px;
-  -webkit-animation: pulse 3s infinite ease-in-out;
-          animation: pulse 3s infinite ease-in-out;
+}
+body main .item-grid .item img:hover {
+  -webkit-animation: pulse 1s ease-in-out;
+          animation: pulse 1s ease-in-out;
+}
+body main .article {
+  width: 100%;
+  background-color: hsl(218deg, 28%, 13%);
+  display: flex;
+}
+body main .article .article-text {
+  width: 100%;
+  color: white;
+  padding: 100px;
+}
+body main .article .article-text h2 {
+  width: 100%;
+  max-width: 345px;
+  font-size: 42px;
+  margin-bottom: 20px;
+  transition: 0.3s;
+}
+body main .article .article-text h2:hover {
+  color: hsl(176deg, 68%, 64%);
+}
+body main .article .article-text .article-text-p {
+  width: 100%;
+  margin-bottom: 18px;
+  color: hsla(0deg, 0%, 100%, 0.726);
+  font-size: 18px;
+  font-family: "Raleway", sans-serif;
+  line-height: 25px;
+}
+body main .article .article-text .git {
+  color: hsl(176deg, 68%, 64%);
+  font-size: 18px;
+  font-family: "Open Sans", sans-serif;
+  transition: 0.3s;
+  cursor: pointer;
+}
+body main .article .article-text .git:hover {
+  color: white;
+}
+body main .article .article-text .git .arrow {
+  width: 20px;
+  position: absolute;
+  margin-left: 4px;
+}
+body main .article .stay {
+  width: 100%;
+  max-width: 600px;
+  margin-left: 70px;
+  margin-top: 30px;
 }/*# sourceMappingURL=main.css.map */
