@@ -18,16 +18,36 @@
     opacity: 1;
   }
 }
+@-webkit-keyframes pulse {
+  0% {
+    filter: brightness(80%);
+  }
+  100% {
+    filter: brightness(200%);
+  }
+}
+@keyframes pulse {
+  0% {
+    filter: brightness(80%);
+  }
+  100% {
+    filter: brightness(200%);
+  }
+}
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  background-color: hsl(217deg, 28%, 15%);
   list-style: none;
 }
 
 body {
   width: 100%;
+  min-height: 100vh;
+  background: url(../images/bg-curvy-desktop.svg) no-repeat;
+  background-position-y: 820px;
+  background-size: contain;
+  background-color: hsl(217deg, 28%, 15%);
 }
 body header {
   display: flex;
@@ -54,8 +74,11 @@ body header nav .header-ul {
   color: hsla(0deg, 0%, 100%, 0.726);
 }
 body header nav .header-ul a {
-  text-decoration: none;
   color: hsla(0deg, 0%, 100%, 0.726);
+  text-decoration: none;
+}
+body header nav .header-ul a:hover {
+  text-decoration: underline;
 }
 body header nav .header-ul a .header-li {
   width: 100%;
@@ -108,10 +131,48 @@ body main .main-first-btn {
   color: white;
   font-size: 18px;
   font-weight: 700;
+  margin-bottom: 100px;
   font-family: "Raleway", sans-serif;
   transition: 0.4s;
   cursor: pointer;
 }
 body main .main-first-btn:hover {
   transform: scale(1.03);
+  color: hsl(218deg, 28%, 13%);
+}
+body main .item-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: hsl(218deg, 28%, 13%);
+  gap: 80px 0;
+}
+body main .item-grid .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body main .item-grid .item h3 {
+  color: white;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 21px;
+  margin-bottom: 7px;
+  transition: 0.4s;
+}
+body main .item-grid .item h3:hover {
+  color: hsl(176deg, 68%, 64%);
+}
+body main .item-grid .item .item-text {
+  color: hsla(0deg, 0%, 100%, 0.726);
+  text-align: center;
+  width: 100%;
+  max-width: 375px;
+  font-size: 18px;
+}
+body main .item-grid .item img {
+  margin-bottom: 20px;
+  -webkit-animation: pulse 3s infinite ease-in-out;
+          animation: pulse 3s infinite ease-in-out;
 }/*# sourceMappingURL=main.css.map */
