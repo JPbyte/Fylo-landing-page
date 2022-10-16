@@ -66,7 +66,7 @@ body{
     min-height: 100vh;
     background: url(../images/bg-curvy-desktop.svg) no-repeat;
     background-position-y: 790px;
-    background-size: contain;
+    background-size: 100% 50vh;
     background-color: $Dark-Blue-intro;
         header{
             display: flex;
@@ -255,7 +255,7 @@ body{
                             background-color: $Dark-Blue-intro;
                             padding: 25px;
                             box-shadow: 0px 0px 15px 5px rgba(36,36,36,0.20);
-                            border-radius: 10px;
+                            border-radius: 3px;
                             transition: 0.4s;
                                 &:hover{
                                     transform: scale(1.05);
@@ -300,6 +300,87 @@ body{
                                         }
                                 }
                         }
+                }
+                .email-box{
+                    width: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: $Dark-Blue-main;
+                        .email-contend{
+                            width: 100%;
+                            max-width: 900px;
+                            height: 245px;
+                            display: flex;
+                            align-items: center;
+                            flex-direction: column;
+                            background-color: rgb(27, 35, 48);
+                            border-radius: 8px;
+                            box-shadow: 0px 0px 15px 5px rgba(36,36,36,0.40);
+                                h5{
+                                    @include raleway;
+                                    color: rgba(255, 255, 255, 0.966);
+                                    font-size: 35px;
+                                    font-weight: 600;
+                                    margin-top: 40px;
+                                    margin-bottom: 30px;
+                                    transition: 0.4s;
+                                        &:hover{
+                                            color: $Cyan;
+                                        }
+                                }
+                                .email-text{
+                                    @include raleway;
+                                    width: 100%;
+                                    max-width: 700px;
+                                    text-align: center;
+                                    font-size: 18px;
+                                    color: $White;
+                                    margin-bottom: 40px;
+                                }
+                        }
+                }
+                form{
+                    width: 100%;
+                    max-width: 800px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-bottom: 10px;
+                        .text-input{
+                            width: 100%;
+                            max-width: 575px;
+                            height: 40px;
+                            padding: 18px;
+                            border: none;
+                            border-radius: 18px;
+                            font-size: 15px;
+                            color: black;
+                        }
+                        .email-input{
+                            width: 100%;
+                            max-width: 200px;
+                            height: 40px;
+                            background-color: $Cyan;
+                            border: none;
+                            border-radius: 18px;
+                            color: white;
+                            font-size: 15px;
+                            transition: 0.4s;
+                                &:hover{
+                                    transform: scale(1.02);
+                                    color: black;
+                                    opacity: 0.8;
+                                }
+                        }
+                }
+                span{
+                    opacity: 0;
+                    width: 100%;
+                    max-width: 775px;
+                    color: $Light-Red;
+                    @include raleway;
+                    animation: go-back 0.6s;
                 }
         }
 }

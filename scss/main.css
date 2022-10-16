@@ -58,7 +58,7 @@ body {
   min-height: 100vh;
   background: url(../images/bg-curvy-desktop.svg) no-repeat;
   background-position-y: 790px;
-  background-size: contain;
+  background-size: 100% 50vh;
   background-color: hsl(217deg, 28%, 15%);
 }
 body header {
@@ -256,7 +256,7 @@ body main .perfil .perfil-box {
   background-color: hsl(217deg, 28%, 15%);
   padding: 25px;
   box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.2);
-  border-radius: 10px;
+  border-radius: 3px;
   transition: 0.4s;
 }
 body main .perfil .perfil-box:hover {
@@ -298,4 +298,86 @@ body main .perfil .perfil-box .perfil-stats .perfil-name h4:hover {
 }
 body main .perfil .perfil-box .perfil-stats .perfil-name .founder {
   color: hsla(0deg, 0%, 100%, 0.726);
+}
+body main .email-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(218deg, 28%, 13%);
+}
+body main .email-box .email-contend {
+  width: 100%;
+  max-width: 900px;
+  height: 245px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(27, 35, 48);
+  border-radius: 8px;
+  box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.4);
+}
+body main .email-box .email-contend h5 {
+  font-family: "Raleway", sans-serif;
+  color: rgba(255, 255, 255, 0.966);
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  transition: 0.4s;
+}
+body main .email-box .email-contend h5:hover {
+  color: hsl(176deg, 68%, 64%);
+}
+body main .email-box .email-contend .email-text {
+  font-family: "Raleway", sans-serif;
+  width: 100%;
+  max-width: 700px;
+  text-align: center;
+  font-size: 18px;
+  color: hsla(0deg, 0%, 100%, 0.726);
+  margin-bottom: 40px;
+}
+body main form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+body main form .text-input {
+  width: 100%;
+  max-width: 575px;
+  height: 40px;
+  padding: 18px;
+  border: none;
+  border-radius: 18px;
+  font-size: 15px;
+  color: black;
+}
+body main form .email-input {
+  width: 100%;
+  max-width: 200px;
+  height: 40px;
+  background-color: hsl(176deg, 68%, 64%);
+  border: none;
+  border-radius: 18px;
+  color: white;
+  font-size: 15px;
+  transition: 0.4s;
+}
+body main form .email-input:hover {
+  transform: scale(1.02);
+  color: black;
+  opacity: 0.8;
+}
+body main span {
+  opacity: 0;
+  width: 100%;
+  max-width: 775px;
+  color: hsl(0deg, 100%, 63%);
+  font-family: "Raleway", sans-serif;
+  -webkit-animation: go-back 0.6s;
+          animation: go-back 0.6s;
 }/*# sourceMappingURL=main.css.map */
