@@ -288,6 +288,9 @@ body main .perfil .perfil-box .perfil-stats .perfil-img .perfil-profile {
 body main .perfil .perfil-box .perfil-stats .perfil-img .perfil-profile:hover {
   transform: scale(1.1);
 }
+body main .perfil .perfil-box .perfil-stats .perfil-name {
+  margin-left: 10px;
+}
 body main .perfil .perfil-box .perfil-stats .perfil-name h4 {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.966);
@@ -309,13 +312,14 @@ body main .email-box {
 body main .email-box .email-contend {
   width: 100%;
   max-width: 900px;
-  height: 245px;
+  height: 290px;
   display: flex;
   align-items: center;
   flex-direction: column;
   background-color: rgb(27, 35, 48);
   border-radius: 8px;
   box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.4);
+  margin-bottom: -115px;
 }
 body main .email-box .email-contend h5 {
   font-family: "Raleway", sans-serif;
@@ -337,6 +341,7 @@ body main .email-box .email-contend .email-text {
   font-size: 18px;
   color: hsla(0deg, 0%, 100%, 0.726);
   margin-bottom: 40px;
+  opacity: 0.6;
 }
 body main form {
   width: 100%;
@@ -380,4 +385,9 @@ body main span {
   font-family: "Raleway", sans-serif;
   -webkit-animation: go-back 0.6s;
           animation: go-back 0.6s;
+}
+body footer {
+  width: 100%;
+  padding: 120px;
+  background-color: hsl(216deg, 53%, 9%);
 }/*# sourceMappingURL=main.css.map */

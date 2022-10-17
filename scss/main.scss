@@ -286,6 +286,7 @@ body{
                                             }
                                         }
                                         .perfil-name{
+                                            margin-left: 10px;
                                             h4{
                                                 font-size: 20px;
                                                 color: rgba(255, 255, 255, 0.966);
@@ -310,13 +311,14 @@ body{
                         .email-contend{
                             width: 100%;
                             max-width: 900px;
-                            height: 245px;
+                            height: 290px;
                             display: flex;
                             align-items: center;
                             flex-direction: column;
                             background-color: rgb(27, 35, 48);
                             border-radius: 8px;
                             box-shadow: 0px 0px 15px 5px rgba(36,36,36,0.40);
+                            margin-bottom: -115px;
                                 h5{
                                     @include raleway;
                                     color: rgba(255, 255, 255, 0.966);
@@ -337,6 +339,7 @@ body{
                                     font-size: 18px;
                                     color: $White;
                                     margin-bottom: 40px;
+                                    opacity: 0.6;
                                 }
                         }
                 }
@@ -382,5 +385,10 @@ body{
                     @include raleway;
                     animation: go-back 0.6s;
                 }
+        }
+        footer{
+            width: 100%;
+            padding: 120px;
+            background-color: $Dark-Blue-footer;
         }
 }
