@@ -413,8 +413,9 @@ body footer .itens-grid .segundo {
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
+  gap: 25px;
 }
 body footer .itens-grid .segundo .phone {
   width: 79%;
