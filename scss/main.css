@@ -577,9 +577,14 @@ body footer .itens-grid .quinto .redes:hover {
     background-position-x: 157px;
   }
 }
-@media (max-width: 640px) {
+@media (max-width: 475px) {
+  body {
+    background-size: 100% 29vh;
+  }
   body main .perfil {
-    background-position-x: 95px;
+    background-position-y: 38px;
+    background-position-x: 50px;
+    padding: 65px;
   }
 }
 @media (max-width: 425px) {

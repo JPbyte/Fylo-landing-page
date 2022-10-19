@@ -583,10 +583,13 @@ body{
         }
     }
 }
-@media (max-width: 640px){
+@media (max-width: 475px){
+    background-size: 100% 29vh;
     main{
         .perfil{
-            background-position-x: 95px;
+            background-position-y: 38px;
+            background-position-x: 50px;
+            padding: 65px;
         }
     }
 }
