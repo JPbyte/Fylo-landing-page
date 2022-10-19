@@ -308,6 +308,7 @@ body{
                     justify-content: center;
                     align-items: center;
                     background-color: $Dark-Blue-main;
+                    padding: 3%;
                         .email-contend{
                             width: 100%;
                             max-width: 900px;
@@ -321,7 +322,7 @@ body{
                             margin-bottom: -115px;
                                 span{
                                     opacity: 0;
-                                    animation: go-back 1s ;
+                                    animation: go-back 1s normal;
                                 }
                                 h5{
                                     @include raleway;
@@ -349,20 +350,31 @@ body{
                 }
                 form{
                     width: 100%;
-                    max-width: 800px;
+                    max-width: 720px;
                     display: flex;
                     justify-content: space-between;
-                    align-items: center;
                     margin-bottom: 10px;
-                        .text-input{
+                    gap: 25px;
+                        .validate-error{
                             width: 100%;
-                            max-width: 575px;
-                            height: 40px;
-                            padding: 18px;
-                            border: none;
-                            border-radius: 18px;
-                            font-size: 15px;
-                            color: black;
+                            .text-input{
+                                width: 100%;
+                                max-width: 575px;
+                                height: 40px;
+                                padding: 18px;
+                                border: none;
+                                border-radius: 18px;
+                                font-size: 15px;
+                                color: black;
+                            }
+                            span{
+                                opacity: 0;
+                                width: 100%;
+                                max-width: 775px;
+                                color: $Light-Red;
+                                @include raleway;
+                                animation: go-back 0.6s;
+                                }
                         }
                         .email-input{
                             width: 100%;
@@ -380,14 +392,6 @@ body{
                                     opacity: 0.8;
                                 }
                         }
-                }
-                span{
-                    opacity: 0;
-                    width: 100%;
-                    max-width: 775px;
-                    color: $Light-Red;
-                    @include raleway;
-                    animation: go-back 0.6s;
                 }
         }
         footer{
@@ -481,4 +485,181 @@ body{
                         }
                 }
         }
+
+@media(max-width:1100px){
+    main{
+        .item-grid{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .article{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+                .stay{
+                    margin-left: 0;
+                }
+                .article-text{
+                    text-align: center;
+                        h2{
+                            max-width: 100%;
+                        }
+                }
+        }
+        .perfil{
+            flex-direction: column;
+            align-items: center;
+            gap: 27px 0;
+            background-position-x: 336px;
+        }
+        .email-box{
+            .email-contend{
+                height: 340px;
+                .email-text{
+                    max-width: 500px;
+                }
+                form{
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 14px 0;
+                        .validate-error{
+                            display: flex;
+                            align-items: center;
+                            width: 100%;
+                            flex-direction: column;
+                                .text-input{
+                                    width: 73%;
+                                }
+                                span{
+                                    width: 70%;
+                                }
+                        }
+                        .email-input{
+                            max-width: 73%;
+                        }
+                }
+            }
+        }
+    }
+    footer{
+        padding: 120px;
+        .itens-grid{
+            grid-template-columns: repeat(1, 1fr);
+            gap: 55px 0;
+                .primeiro{
+                    gap: 20px;
+                }
+                .segundo{
+                    align-items: flex-start;
+                        .phone{
+                            width: 100%;
+                            max-width: 189px;
+                        }
+                }
+                .terceiro{
+                    align-items: flex-start;
+                }
+                .quinto{
+                    width: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 20px;
+                }
+        }
+    }
+}
+@media (max-width: 1024px){
+    background-size: 100% 52vh;
+    main{
+        .perfil{
+            background-position-x: 286px;
+        }
+    }
+}
+@media (max-width: 768px){
+    main{
+        .perfil{
+            background-position-x: 157px;
+        }
+    }
+}
+@media (max-width: 640px){
+    main{
+        .perfil{
+            background-position-x: 95px;
+        }
+    }
+}
+@media (max-width: 425px){
+    background-size: 100% 25vh;
+    background-position-y: 630px;
+    header{
+        padding: 15px;
+            .image{
+                width: 70%;
+                    .header-logo{
+                    width: 85%;
+                    }
+            }
+    }
+    main{
+        h1{
+            font-size: 30px;
+        }
+        .perfil{
+            padding: 20px;
+        }
+        .email-box{
+            .email-contend{
+                h5{
+                    font-size: 29px;
+                }
+                .email-text{
+                    font-size: 15px;
+                }
+            }
+        }
+        .article{
+            .article-text{
+                text-align: initial;
+                padding: 30px;
+                    .article-text-p{
+                        font-size: 16px;
+                    }
+            }
+        }
+    }
+    footer{
+        padding: 170px 28px;
+    }
+}
+@media (max-width: 375px){
+    background-size: 100% 29vh;
+    background-position-y: 589px;
+        header{
+            .image{
+                width: 56%;
+                    .header-logo{
+                        width: 88%;
+                    }
+            }
+            nav{
+                align-items: flex-start;
+            }
+        }
+        main{
+            padding: 0px 2px;
+                h1{
+                    font-size: 29px;
+                }
+                .email-box{
+                    .email-contend{
+                        .validate-error{
+                            span{
+                                width: 75%;
+                            }
+                        }
+                    }
+                }
+        }
+}
 }

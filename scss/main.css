@@ -308,6 +308,7 @@ body main .email-box {
   justify-content: center;
   align-items: center;
   background-color: hsl(218deg, 28%, 13%);
+  padding: 3%;
 }
 body main .email-box .email-contend {
   width: 100%;
@@ -323,8 +324,8 @@ body main .email-box .email-contend {
 }
 body main .email-box .email-contend span {
   opacity: 0;
-  -webkit-animation: go-back 1s;
-          animation: go-back 1s;
+  -webkit-animation: go-back 1s normal;
+          animation: go-back 1s normal;
 }
 body main .email-box .email-contend h5 {
   font-family: "Raleway", sans-serif;
@@ -350,13 +351,16 @@ body main .email-box .email-contend .email-text {
 }
 body main form {
   width: 100%;
-  max-width: 800px;
+  max-width: 720px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 10px;
+  gap: 25px;
 }
-body main form .text-input {
+body main form .validate-error {
+  width: 100%;
+}
+body main form .validate-error .text-input {
   width: 100%;
   max-width: 575px;
   height: 40px;
@@ -365,6 +369,15 @@ body main form .text-input {
   border-radius: 18px;
   font-size: 15px;
   color: black;
+}
+body main form .validate-error span {
+  opacity: 0;
+  width: 100%;
+  max-width: 775px;
+  color: hsl(0deg, 100%, 63%);
+  font-family: "Raleway", sans-serif;
+  -webkit-animation: go-back 0.6s;
+          animation: go-back 0.6s;
 }
 body main form .email-input {
   width: 100%;
@@ -381,15 +394,6 @@ body main form .email-input:hover {
   transform: scale(1.02);
   color: black;
   opacity: 0.8;
-}
-body main span {
-  opacity: 0;
-  width: 100%;
-  max-width: 775px;
-  color: hsl(0deg, 100%, 63%);
-  font-family: "Raleway", sans-serif;
-  -webkit-animation: go-back 0.6s;
-          animation: go-back 0.6s;
 }
 body footer {
   width: 100%;
@@ -481,4 +485,160 @@ body footer .itens-grid .quinto .redes {
 }
 body footer .itens-grid .quinto .redes:hover {
   filter: brightness(0) saturate(100%) invert(98%) sepia(66%) saturate(6998%) hue-rotate(148deg) brightness(98%) contrast(80%);
+}
+@media (max-width: 1100px) {
+  body main .item-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  body main .article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body main .article .stay {
+    margin-left: 0;
+  }
+  body main .article .article-text {
+    text-align: center;
+  }
+  body main .article .article-text h2 {
+    max-width: 100%;
+  }
+  body main .perfil {
+    flex-direction: column;
+    align-items: center;
+    gap: 27px 0;
+    background-position-x: 336px;
+  }
+  body main .email-box .email-contend {
+    height: 340px;
+  }
+  body main .email-box .email-contend .email-text {
+    max-width: 500px;
+  }
+  body main .email-box .email-contend form {
+    flex-direction: column;
+    align-items: center;
+    gap: 14px 0;
+  }
+  body main .email-box .email-contend form .validate-error {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  body main .email-box .email-contend form .validate-error .text-input {
+    width: 73%;
+  }
+  body main .email-box .email-contend form .validate-error span {
+    width: 70%;
+  }
+  body main .email-box .email-contend form .email-input {
+    max-width: 73%;
+  }
+  body footer {
+    padding: 120px;
+  }
+  body footer .itens-grid {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 55px 0;
+  }
+  body footer .itens-grid .primeiro {
+    gap: 20px;
+  }
+  body footer .itens-grid .segundo {
+    align-items: flex-start;
+  }
+  body footer .itens-grid .segundo .phone {
+    width: 100%;
+    max-width: 189px;
+  }
+  body footer .itens-grid .terceiro {
+    align-items: flex-start;
+  }
+  body footer .itens-grid .quinto {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 1024px) {
+  body {
+    background-size: 100% 52vh;
+  }
+  body main .perfil {
+    background-position-x: 286px;
+  }
+}
+@media (max-width: 768px) {
+  body main .perfil {
+    background-position-x: 157px;
+  }
+}
+@media (max-width: 640px) {
+  body main .perfil {
+    background-position-x: 95px;
+  }
+}
+@media (max-width: 425px) {
+  body {
+    background-size: 100% 25vh;
+    background-position-y: 630px;
+  }
+  body header {
+    padding: 15px;
+  }
+  body header .image {
+    width: 70%;
+  }
+  body header .image .header-logo {
+    width: 85%;
+  }
+  body main h1 {
+    font-size: 30px;
+  }
+  body main .perfil {
+    padding: 20px;
+  }
+  body main .email-box .email-contend h5 {
+    font-size: 29px;
+  }
+  body main .email-box .email-contend .email-text {
+    font-size: 15px;
+  }
+  body main .article .article-text {
+    text-align: initial;
+    padding: 30px;
+  }
+  body main .article .article-text .article-text-p {
+    font-size: 16px;
+  }
+  body footer {
+    padding: 170px 28px;
+  }
+}
+@media (max-width: 375px) {
+  body {
+    background-size: 100% 29vh;
+    background-position-y: 589px;
+  }
+  body header .image {
+    width: 56%;
+  }
+  body header .image .header-logo {
+    width: 88%;
+  }
+  body header nav {
+    align-items: flex-start;
+  }
+  body main {
+    padding: 0px 2px;
+  }
+  body main h1 {
+    font-size: 29px;
+  }
+  body main .email-box .email-contend .validate-error span {
+    width: 75%;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -15,7 +15,7 @@
   <header>
 
     <div class="image">
-      <img src="images/logo.svg" alt="Logo">
+      <img class="header-logo" src="images/logo.svg" alt="Logo">
     </div>
     <nav>
         <ul class="header-ul">
@@ -114,10 +114,13 @@
                 <h5>Get Earky access today</h5>
                   <p class="email-text">It only takes to sign up and our tree starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
                     <form action="">
-                      <input type="text" class="text-input" placeholder="email@exemple.com">
-                        <input type="submit" class="email-input" value="Get Started For Free">
+                      <div class="validate-error">
+                        <input type="text" class="text-input" placeholder="email@exemple.com">
+                         <span class="error"></span>
+                      </div>
+                      <input type="submit" class="email-input" value="Get Started For Free">
+                      
                     </form>
-                    <span class="error"></span>
               </div>
            </div>
   </main>
