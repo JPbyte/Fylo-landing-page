@@ -475,6 +475,7 @@ body footer .itens-grid .quinto {
   display: flex;
   justify-content: space-between;
   width: 55%;
+  gap: 20px;
 }
 body footer .itens-grid .quinto .redes {
   width: 35px;

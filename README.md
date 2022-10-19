@@ -32,7 +32,7 @@ Desktop design
 
 ### Links
 
-- Solution URL: [Fylo dark theme landing page solution]()
+- Solution URL: [Fylo dark theme landing page solution](https://www.frontendmentor.io/solutions/fylo-dark-theme-landing-page-solution-WfyS4NVGa3)
 - Live Site URL: [Add live site URL here](https://jpbyte.github.io/Fylo-landing-page/)
 
 ## My process
