@@ -321,6 +321,11 @@ body main .email-box .email-contend {
   box-shadow: 0px 0px 15px 5px rgba(36, 36, 36, 0.4);
   margin-bottom: -115px;
 }
+body main .email-box .email-contend span {
+  opacity: 0;
+  -webkit-animation: go-back 1s;
+          animation: go-back 1s;
+}
 body main .email-box .email-contend h5 {
   font-family: "Raleway", sans-serif;
   color: rgba(255, 255, 255, 0.966);
