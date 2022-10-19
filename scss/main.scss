@@ -66,7 +66,7 @@ body{
     min-height: 100vh;
     background: url(../images/bg-curvy-desktop.svg) no-repeat;
     background-position-y: 790px;
-    background-size: 100% 50vh;
+    background-size: 100% 52vh;
     background-color: $Dark-Blue-intro;
         header{
             display: flex;
@@ -388,7 +388,92 @@ body{
         }
         footer{
             width: 100%;
-            padding: 120px;
+            padding: 195px;
             background-color: $Dark-Blue-footer;
+                .itens-grid{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: repeat(5,1fr);;
+                        .primeiro{
+                            display: flex;
+                            .location-img{
+                                width: 25px;
+                                height: 25px;
+                            }
+                            .location{
+                                color: white;
+                                margin-left: 10px;
+                                font-size: 20px;
+                                line-height: 21px;
+                            }
+                        }
+                        .segundo{
+                            width: 100%;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: space-evenly;
+                            align-items: center;
+                                .phone{
+                                    width: 79%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    color: white;
+                                    gap: 22px;
+                                    font-size: 20px;
+                                }
+                                .phone-img{
+                                    width: 25px;
+                                    height: 25px;
+                                }
+                        }
+                        .terceiro{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: center;
+                            line-height: 33px;
+                            font-size: 20px;
+                                .footer-a{
+                                    color: white;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                    transition: 0.4s;
+                                        &:hover{
+                                            color: $Cyan;
+                                        }
+                                }
+                        }
+                        .quarto{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            line-height: 34px;
+                            font-size: 20px;
+                                .footer-a{
+                                    color: white;
+                                    text-decoration: none;
+                                    cursor: pointer;
+                                    transition: 0.4s;
+                                        &:hover{
+                                            color: $Cyan;
+                                        }
+                                }
+                        }
+                        .quinto{
+                            display: flex;
+                            justify-content: space-between;
+                            width: 55%;
+                            .redes{
+                                width: 35px;
+                                height: 35px;
+                                filter: brightness(0) saturate(100%) invert(93%) sepia(100%) saturate(0%) hue-rotate(302deg) brightness(108%) contrast(107%);
+                                transition: 0.4s;
+                                cursor: pointer;
+                                    &:hover{
+                                        filter: brightness(0) saturate(100%) invert(98%) sepia(66%) saturate(6998%) hue-rotate(148deg) brightness(98%) contrast(80%);
+                                    }
+                            }
+                        }
+                }
         }
 }
